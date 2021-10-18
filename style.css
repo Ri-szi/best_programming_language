@@ -32,15 +32,18 @@ h1 {
 main {
   position: static;
   width: 100%;
-  min-height: 50%;
 }
 
 .card {
   position: relative;
+  min-height: 60vh;
   background-color: #392f5a;
   color: #ffff;
   padding: 1.5rem;
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card h3 {
@@ -76,9 +79,54 @@ main {
   border: 2px solid #fff;
 }
 
-.intro {
-  display: none;
-}
 .processing {
+  position: relative;
+}
+
+.element {
+  position: absolute;
+  width: 80%;
+  height: 10%;
+  background-color: white;
+  color: #392f5a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.5em;
+  transition: all 0.07s;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+._1 {
+  top: 10%;
+  opacity: 0;
+}
+
+._2 {
+  top: 30%;
+  opacity: 0.5;
+}
+._3 {
+  top: 50%;
+}
+._4 {
+  top: 70%;
+  opacity: 0.5;
+}
+._5 {
+  top: 90%;
+  opacity: 0;
+}
+
+.frame {
+  top: 50%;
+  background: transparent;
+  outline: 5px solid green;
+  outline-offset: 10px;
+}
+
+.invisible {
   display: none;
 }
