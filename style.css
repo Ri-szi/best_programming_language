@@ -130,3 +130,20 @@ main {
 .invisible {
   display: none;
 }
+
+footer {
+  width: 100%;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+@media (max-width: 500px) {
+  footer ul {
+    flex-direction: column;
+  }
+}
