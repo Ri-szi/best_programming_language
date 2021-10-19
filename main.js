@@ -29,7 +29,7 @@ async function action() {
     await timer(70);
   }
 
-  await timer(1000);
+  await timer(2000);
   container.classList.add('invisible');
   result.classList.remove('invisible');
 }
