@@ -54,6 +54,14 @@ main {
 
 .card p {
   margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.card h4 {
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: underline;
 }
 
 .card button {

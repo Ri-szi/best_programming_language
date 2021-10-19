@@ -29,6 +29,10 @@ async function action() {
     await timer(70);
   }
 
+  const picked = document.querySelector('._3').innerText;
+  const winner = document.querySelector('.winner');
+  winner.innerText = `Your destiny is ${picked}`;
+
   await timer(2000);
   container.classList.add('invisible');
   result.classList.remove('invisible');
